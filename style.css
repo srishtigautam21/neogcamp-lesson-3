@@ -8,8 +8,8 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 .container-fluid{
-    padding-left:1rem;
-    padding-left:1rem;
+    padding-left:5rem;
+    padding-right:5rem;
 
 }
 .container-center{
@@ -95,7 +95,9 @@ hr{
 }
 .section h1{
     text-align:center;
+
 }
+
 .footer{
     background-color: var(--primary-color);
     padding: 2rem 1rem;
