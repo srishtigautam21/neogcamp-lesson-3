@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component library</title>
+    <link href="style.css" rel="stylesheet" />
 </head>
 <body>
     <h1>This is Srishti's Component Library</h1>
@@ -21,57 +22,64 @@
         <h2>@Container</h2>
 
         <h3>Fluid Container</h3>
-        <div>This is a fluid container and this will go till the end of page.</div>
+        <div class="container container-fluid">
+            This is a fluid container and this will go till the end of page.</div>
 
         <h3>Center Container</h3>
-        <div>This is a centered container and will go till the specified width.</div>
+        <div class="container container-center">
+            This is a centered container and will go till the specified width.</div>
 
         <hr >
         <h2>@Links</h2>
 
-        <a href="https://google.com">Primary Link</a>
-        <a href="https://google.com">Secondary Link</a>
+        <a class="link link-primary" 
+        href="/">Primary Link</a>
+        <a class="link link-secondary" 
+        href="/">Secondary Link</a>
         <hr >
         <h2>@Lists</h2>
         <h3>Unordered List</h3>
-        <ul>
+        <ul class="list-non-bullet">
             <li>Item one</li>
             <li>Item Two</li>
         </ul>
          <h3>Unordered Inline Lists</h3>
-         <ul>
-             <li>Inline Item One</li>
-             <li>Inline Item Two</li>
+         <ul class="list-non-bullet">
+             <li class="list-item-inline">Inline Item One</li>
+             <li class="list-item-inline">Inline Item Two</li>
          </ul>
 
          <h3>Reverese Ordered List</h3>
-         <ol>
+         <ol reversed>
              <li>Milk</li>
              <li>Bread</li>
              <li>Butter</li>
          </ol>
          <hr>
          <h2>@Nav</h2>
-         <nav>
-             <ul>
-                 <li>
-                    <a href="/">Home</a>
+         <nav class="navigation container">
+             <div class="nav-brand">iAmBrand</div> 
+            <ul class="list-non-bullets nav-pills">
+                 <li class="list-item-inline">
+                    <a class="link" href="/">Home</a>
                  </li>
-                 <li>
-                     <a href="/">Product</a>
+                 <li class="list-item-inline" >
+                     <a class="link" href="/">Product</a>
                  </li>
-                 <li>
-                     <a href="/">About</a>
+                 <li class="list-item-inline">
+                     <a class="link" href="/">About</a>
                  </li>
              </ul>
          </nav>
          <hr>
 
          <h2>@Header</h2>
+
          <header>
              <img src="Images/hero.svg" />
-             <h1>Heading Inside Hero</h1>
-         </header>
+             <h2>Heading Inside Hero</h2>
+        </header>
+         
          <hr>
          <h2>@Section</h2>
          <section>
