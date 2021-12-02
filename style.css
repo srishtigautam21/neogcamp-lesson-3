@@ -10,6 +10,7 @@ body{
 .container-fluid{
     padding-left:5rem;
     padding-right:5rem;
+    
 
 }
 .container-center{
@@ -21,19 +22,20 @@ hr{
 }
 .link{
     text-decoration: none;
-    padding:0.5rem 1rem;
+    padding:0.25rem 1rem;
+    /**text-align:center;**/
 
 }
 .link-primary{
     background-color:var(--primary-color);
-    border-radius:0.5rem;
+    border-radius:1rem;
     color:white;
 
     
 }
 .link-secondary{
     color:var(--primary-color);
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     border:1px solid var(--primary-color);
 }
 .list-non-bullet{
@@ -87,16 +89,17 @@ hr{
     color: var(--primary-color);
 }
 .section{
-    padding: 2rem;
+    padding: 1rem;
 }
 .ow{
     background-color:var(--off-white);
 
 }
-.section h1{
+.section h1, p, h4{
     text-align:center;
-
+  
 }
+
 
 .footer{
     background-color: var(--primary-color);
