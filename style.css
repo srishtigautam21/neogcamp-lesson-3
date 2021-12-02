@@ -3,6 +3,7 @@
     --primary-color:#A855F7;
     --grey-color:#64748B;
     --off-white:#F1F5F9;
+    --off-purple:#EDE9FE;
 }
 body{
     font-family: 'Open Sans', sans-serif;
@@ -92,7 +93,7 @@ hr{
     padding: 1rem;
 }
 .ow{
-    background-color:var(--off-white);
+    background-color:var(--off-purple);
 
 }
 .section h1, p, h4{
