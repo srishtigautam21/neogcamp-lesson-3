@@ -1,6 +1,10 @@
-This is neogcamp-lesson-3.
+This is my portfolio.
+
 ### Tech stack used
-* HTML 
-* CSS 
+
+- HTML
+- CSS
+
 ### Links
+
 Attaching the direct link of my portfolio https://srishtigautam-portfolio.netlify.app/
