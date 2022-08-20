@@ -4,16 +4,42 @@
   --grey-color: #64748b;
   --off-white: #f1f5f9;
   --off-purple: #ede9fe;
+  --box-shadow-color: #cc99fc;
 }
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0%;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+}
+.home-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
 .container-fluid {
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding: 1rem;
+  /* padding-right: 5rem; */
 }
 .main-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   padding: 1rem 2rem;
 }
 .container-center {
@@ -23,23 +49,47 @@ body {
 hr {
   margin: 1rem 0rem;
 }
+.about-me {
+  max-width: 60rem;
+  margin: 1rem;
+  line-height: 1.5rem;
+}
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
 .link {
   text-decoration: none;
-  padding: 0.25rem 1rem;
+  padding: 5px;
+  border-radius: 5px;
   /**text-align:center;**/
+}
+.active-link {
+  color: orange;
+}
+.link:hover {
+  box-shadow: 2px 5px 5px var(--box-shadow-color);
 }
 .link-primary {
   background-color: var(--primary-color);
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
+  padding-top: 6px;
+  padding-bottom: 6px;
   color: white;
 }
 .link-secondary {
-  color: var(--primary-color);
-  border-radius: 1rem;
+  /* color: var(--primary-color); */
+  background-color: var(--primary-color);
+  color: white;
+  /* border-radius: 1rem; */
   border: 1px solid var(--primary-color);
 }
 .list-non-bullet {
   list-style: none;
+  margin: 1rem;
 }
 .list-item-inline {
   display: inline;
@@ -48,22 +98,31 @@ hr {
 /**navigation**/
 
 .navigation {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 1rem 1rem;
-
-  border-bottom-left-radius: 1rem;
+  /* background-color: var(--primary-color); */
+  /* color: white; */
+  color: var(--primary-color);
+  padding: 2rem 1rem;
+  max-width: 60rem;
+  margin: auto;
+  /* border-bottom-left-radius: 1rem; */
+  border-bottom: 2px solid var(--primary-color);
   /* margin: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .navigation .link {
-  color: white;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 .navigation .nav-pills {
   text-align: right;
 }
 .navigation .nav-brand {
   font-weight: bold;
-  font-size: medium;
+  font-size: 1.3rem;
+  font-style: italic;
 }
 .navigation .link-active {
   font-weight: bold;
@@ -73,6 +132,7 @@ hr {
 
 .hero {
   padding: 2rem;
+  /* max-width: 60rem; */
 }
 .hero .hero-img {
   margin: auto;
@@ -87,29 +147,67 @@ hr {
 .hero .hero-heading .inside-heading {
   color: var(--primary-color);
 }
+.header-about-me {
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 1rem;
+}
+.round-img {
+  height: 12rem;
+  width: 12rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid black;
+}
 .section {
   padding: 1rem;
   border-radius: 1rem;
+  max-width: 18rem;
+  border: 2px solid var(--primary-color);
+  height: 28rem;
+  /* max-height: 37.5rem; */
 }
 .ow {
   background-color: var(--off-purple);
+}
+.card-buttons {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+  margin-top: 1rem;
 }
 .section h1,
 p,
 h4 {
   text-align: center;
 }
-
+.section img {
+  width: 100%;
+  max-width: 24vw;
+  height: auto;
+  /* height: 10rem; */
+  object-fit: cover;
+}
+.project-desc {
+  padding: 1rem;
+  line-height: 1.3rem;
+}
 .footer {
-  background-color: var(--primary-color);
-  padding: 2rem 1rem;
+  /* background-color: var(--primary-color); */
+  padding: 2rem 1rem 0rem 1rem;
+  max-width: 60rem;
+  margin: auto;
   text-align: center;
-  color: white;
-  border-top-right-radius: 1rem;
+  /* color: white; */
+  color: var(--primary-color);
+  /* border-top-right-radius: 1rem; */
+  border-top: 2px solid var(--primary-color);
   margin-top: 30px;
 }
 .footer .link {
-  color: white;
+  color: var(--primary-color);
 }
 .footer .footer-header {
   font-weight: bold;
@@ -117,4 +215,7 @@ h4 {
 }
 .footer ul {
   padding-inline-start: 0px;
+}
+.social-icons {
+  font-size: 2rem;
 }
