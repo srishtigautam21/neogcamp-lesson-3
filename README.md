@@ -4,6 +4,7 @@ This is my portfolio.
 
 - HTML
 - CSS
+- JS
 
 ### Links
 
